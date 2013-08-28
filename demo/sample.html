@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>senthil</title>
+  <script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="blacklist.js"></script>
+  <script type="text/javascript">
+    $(document).ready( function() {
+      $('p').blacklist(
+        {
+          color: '#006699',
+          symbol: '$$$$',
+          ignore: ['ass', 'jap'],
+          add_blacklist: ['Senthil']
+        });
+    });
+  </script>
+</head>
+<body>
+  <p>TEST</p>
+  <p>ass</p>
+  <p>wop</p>
+  <p>jap</p>
+  <p>Senthil</p>
+</body>
+</html>

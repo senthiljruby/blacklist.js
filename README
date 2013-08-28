@@ -6,41 +6,48 @@ Blacklist.js
     **Blacklist.js** is a simple jquery plugin for blacklisting unwanted words.
     
     
-###Implementation
+### Implementation
 
-####Basic Usage
+#### Basic Usage
+
+Include js
+
+``` 
+< script src='jquery.js'></script>
+< script src='blacklist.min.js'></script>
+```
     
 ```
   $('p').blacklist();
 ``` 
     
-####Changing Symbols
+#### Changing Symbols
 
 ```
   $('p').blacklist({
-        symbol: '@@@@'    
+    symbol: '@@@@'    
   });
 ``` 
-####Changing Color
+#### Changing Color
 
 ```
   $('p').blacklist({
     color: 'red'
   });
 ``` 
-####Ignore Blacklist word
+#### Ignore Blacklist word
 ```
   $('p').blacklist({
       ignore: ['test', 'test1']
   });
 ``` 
-####Add to the list for blacklist on your page
+#### Add to the list for blacklist on your page
 ```     
   $('p').blacklist({
       add_blacklist: ['ABCD', 'XXX']
   });
 ``` 
-####Overall customization
+#### Overall customization
 ``` 
   $(document).ready( function() {
     $('p').blacklist(
